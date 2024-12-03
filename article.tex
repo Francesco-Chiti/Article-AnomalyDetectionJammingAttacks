@@ -147,7 +147,7 @@ will be able to train specific AI models to detect and respond to security threa
 In this paper we focus on a specific aspect of the security of 6G networks, namely we provide a lightweight edge-based Machine Learning approach 
 for the detection of jamming attacks in networks of drones. We conceptualize a scenario where a drone is subject to constant and periodic jamming and has to rely on an internal AI model to detect the attack and apply the appropriate countermeasures. 
 
-In the future, IoT devices are expected to come equipped with AI-specific chips that will allow them to run AI models directly on the edge, without the need to offload computation to a central server. This is especially useful in the case of jamming attacks, where the communication between the device and the server is disrupted.
+In the future, IoT devices are expected to come equipped with AI-specific chips that will allow them to run AI models directly on the edge, without the need to offload computation to a central server. This approach, aligning with the context-aware autonomic computing and communications paradigm~\cite{ChFaLoPu16}, is especially useful in the case of jamming attacks, where the communication between the device and the server is disrupted.
 Our solution is designed to run on a resource-constrained IoT device like a drone and to be lightweight, both in terms of memory usage and computational power.
 Despite the low resource requirements, the proposed approach is able to detect both constant and periodic jamming attacks with a high degree of accuracy, as well as correctly classify normal traffic. 
 
@@ -953,7 +953,10 @@ After the tuning phase, the drone would periodically sample incoming signals and
 Future research could explore the model's performance against a broader range of jamming attacks types, including smart, reactive and random jamming, and evaluate the impact of real world noise on its accuracy.
 Deploying the model on a drone would provide opportunity for real-world testing and valuable insights for further refinement.
 
-As discussed in Section \ref{sec:DetectionMitigation}, devices integrated into 6G networks are expected to have a higher degree of sensing capabilities compared to current devices \cite{6GRoadmapLetaief}. Thanks to the ability of the Isolation Forest to work on high dimensional data, the model could easily be expanded to include more classification features, which would improve its situational awareness and performance.
+As discussed in Section \ref{sec:DetectionMitigation}, devices integrated into 6G networks are expected to have a higher degree of sensing capabilities compared to current devices \cite{}. Thanks to the ability of the Isolation Forest to work on high dimensional data, the model could easily be expanded to include more classification features, which would improve its situational awareness and performance.
+
+Furthermore, future work could include the investigation of the impact of adversarial settings, as this could offer insights into real-world performance as well as demonstrate adaptability to emerging 6G technologies.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1028,6 +1031,9 @@ RSV & Relative Speed Variation \\
 
 \bibitem[Letaief et al.(2019)]{6GRoadmapLetaief}
 Letaief, K.B.; Chen, W.; Shi, Y.; Zhang, J.; AI, B. The Roadmap to 6G: AI Empowered Wireless Networks. {\em IEEE Communications Magazine} {\bf 2019}, {\em 57}, 84--90. \url{https://doi.org/10.1109/MCOM.2019.1900271}.
+
+\bibitem[Chiti et al.(2016)]{LoPu16}
+Chiti, Francesco and Fantacci, Romano and Loreti, Michele and Pugliese, Rosario The Roadmap to 6G: Context-aware wireless mobile autonomic computing and communications: research trends and emerging applications. {\em IEEE Wireless Communications} {\bf 2016}, {\em 23}, {\em 2}, 86--92. \url{https://10.1109/MWC.2016.7462489}.
 
 \bibitem[Lyamin et al.(2018)]{VANETsAI-Lyamin}
 Lyamin, N.; Samuylov, A.; Gaidamaka, Y.; Vinel, A.; Koucheryavy, Y. AI-Based Malicious Network Traffic Detection in VANETs. {\em IEEE Network} {\bf 2018}, {\em 32}, 15--21. \url{https://doi.org/10.1109/MNET.2018.1800074}.
