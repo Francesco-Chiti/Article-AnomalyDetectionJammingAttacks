@@ -282,8 +282,9 @@ Furthermore, as the network is expected to be integrated with AI from the ground
 
 \subsection{Scenario Definition and Attacker Classification}
 
-In the proposed scenario (Figure \ref{fig:CombinedJammingscenariosDiagram}) we have a flying drone that is subject to a jamming attack. The drone communicates with a ground station and periodically samples the Received Signal Strength (RSS) of the signal it receives. 
-The drone implements a simple unsupervised machine learning module, trained on nominal traffic RSS values. The module takes the sampled RSS values and classifies them as either normal or anomalous, making the drone able to determine whether or not a jamming attack is taking place. 
+The reference scenario, as depicted in Figure \ref{fig:CombinedJammingscenariosDiagram}, is comprised of a  drone that is subject to a jamming attack. The drone communicates with a ground station and periodically samples the Received Signal Strength (RSS) of the signal it receives. 
+According to the edge processing and networking paradigm, the drone is equipped with jamming detection module which could be integrated as a part of a more complex security architectural framework. 
+In particular, this module implements a simple unsupervised machine learning module, trained on nominal traffic RSS values. The module takes the sampled RSS values and classifies them as either normal or anomalous, making the drone able to determine whether or not a jamming attack is taking place. 
 
 
 We assume that a jammer is deployed in the network and that it starts a jamming attack at a certain instant by transmitting a high-power signal on the same frequency as the one used by the drone to communicate with the ground station.
